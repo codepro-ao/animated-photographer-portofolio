@@ -27,11 +27,13 @@ body{
 .left{
     background: #B3B4AF;
     left: 0%;
+    width: 0%;
 }
 
 .right{
     background: #191921;
     right: 0%;
+    width: 100%;
 }
 
 .nav ul{
