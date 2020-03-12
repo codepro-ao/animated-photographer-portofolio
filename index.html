@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Portofolio </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
        <div class="nav">
         <ul>
             <li class="logo">unsplsh</li>
-            <li class="menu"><i class="fa fa-bars"></i>menu</li>
+            <li class="menu"><i class="fa fa-bars"></i></li>
             <li class="colletions" >collection</li>
             <li class="explore">explore</li>
             <li class="search">search</li>
@@ -39,11 +42,11 @@
             </div>
 
             <div class="text">
-                <h1>Carla gar</h1>
+                <h1>KARINA TES</h1>
                 <p>Fashion Protographer</p>
             </div>
 
-            <div class="name">Carla garc</div>
+            <div class="name">KARINA TES</div>
             
             <div class="bottom-nav">
                 <ul>
@@ -56,33 +59,59 @@
     </div>
 
     <script>
+            TweenMax.to('.left', 2, {
+      delay: .8,
+      width: '50%',
+      ease: Power2.easeInOut
+    })
 
-        TweenMax.to(".left",2 ,{
-            delay: .8,
-            width: '50%',
-            ease: Power2.easeInOut
-        })        
+    TweenMax.to('.right', 2, {
+      delay: .6,
+      width: '50%',
+      ease: Power3.easeInOut
+    })
 
-        TweenMax.to(".right",2 ,{
-            delay:.6,
-            width: '50%',
-            ease: Power3.easeInOut
-        })    
+    TweenMax.from('.nav', 2, {
+      delay: .8,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
 
-        TweenMax.from(".nav",2 ,{
-            delay:.8,
-            opcity:0,
-            ease: Expo.easeInOut
-        })   
+    TweenMax.from('.text h1', 2, {
+      delay: .6,
+      x: 1000,
+      ease: Circ.easeInOut
+    })
+
+    TweenMax.from('.text p', 2, {
+      delay: .7,
+      x: 1000,
+      ease: Circ.easeInOut
+    })
+
+    TweenMax.to('.karina', 2, {
+      delay: 1.5,
+      width: '800px',
+      ease: Power2.easeInOut
+    })
+
+    TweenMax.staggerFrom('.bottomnav ul li', 2, {
+      delay: 1,
+      x: 1000,
+      ease: Circ.easeInOut
+    }, 0.08)
+
+    TweenMax.from('.info', 2, {
+      delay: 1.5,
+      y: 100,
+      ease: Circ.easeInOut
+    })
+
+    TweenMax.from('.name', 2, {
+      delay: 1.5,
+      x: -600,
+      ease: Circ.easeInOut
+    })
     </script>
-
-    <script src="./assets/js/ionicons.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="./assets/js/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-    <script src="./assets/js/three.min.js"
-      integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
-    <script src="./assets/js/hover-effect.umd.js"></script>
-
 </body>
 </html>
