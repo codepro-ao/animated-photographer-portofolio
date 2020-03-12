@@ -41,7 +41,7 @@ This is an animated ladingpage photographer portofolio
 
 ## Layout
 
-[Preview](https://github.com/codepro-ao/)
+[Preview](https://animated-photographer-portofolio.netlify.com/)
 
 ### Layout Exemple Image
 
